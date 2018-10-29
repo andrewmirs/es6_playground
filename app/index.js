@@ -1,14 +1,14 @@
-import * as math from './math';
-import { addToDom as atd } from './helpers';
+import SuperPerson from './person';
 
-console.log('Math: ', math)
+const Nelly = new SuperPerson('Nelly', 'running in place');
+const McLovin = new SuperPerson('McLovin', 'eating a gross amount of doritos');
 
-atd('h2', `23 + 67 = ${math.add( 23, 67 )}`);
+Nelly.talk('if ya know ya know');
+McLovin.talk('p_$$ys on the pavement fellllas');
 
-atd('h2', `78 - 31 = ${math.subtract( 78, 31 )}`);
+McLovin.greet();
+Nelly.greet();
 
-atd('h2', `42 * 13 = ${math.multiply( 42, 13 )}`);
+McLovin.saySuperPower();
+Nelly.saySuperPower();
 
-atd('h2', `120 / 4 = ${math.divide( 120, 4 )}`);
-
-atd('h2', `10 / 0 = ${math.divide( 10, 0 )}`);
